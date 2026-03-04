@@ -31,10 +31,12 @@ public class GameManager : MonoBehaviour
 
     private void UpdateUI()
     {
+        scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
         if (scoreText != null)
         {
             scoreText.text = $"Score: {score}";
         }
+
     }
 
 
